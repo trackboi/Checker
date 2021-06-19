@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/textView2"
+            android:visibility="invisible" />
+        <TextView
+            android:text="Corona Checker"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="25dp"
+            android:id="@+id/textView1"
+            android:layout_gravity="center"
+            android:gravity="center" 
+            android:textColor="#FF018786"/>
+         <TextView
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/textView3"
+            android:visibility="invisible" />
+        <TextView
+            android:text="Auf den folgenden Seiten werden mögliche Corona Symptome abgefragt. Die App berechnet dann aus den Ja und Nein antworten eine Score. Diese Score dient lediglich nur der Orientierung und soll keinesfalls mit einem ärztliche gutachten gleichgestzt werden. "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:id="@+id/textView4"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/textView7"
+            android:visibility="invisible" />
+        <CheckBox
+            android:text="Verstanden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox1"
+            android:textColor="@android:color/black" />
+          <TextView
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView5"
+            android:visibility="invisible" />
+              <Button
+            android:text="Button"
+            android:layout_width="200dp"
+            android:layout_height="110dp"
+            android:id="@+id/button1"
+            android:backgroundTint="#FF018786"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</RelativeLayout>
+
