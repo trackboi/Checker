@@ -23,7 +23,8 @@ namespace Checker
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.CC_Checker01);
-            string st = Intent.GetSerializableExtra("score");
+            
+            int sc = JsonConvert.DeserializeObject<int>(Intent.GetStringExtra("score"));
 
             // Create your application here
         }
@@ -33,7 +34,7 @@ namespace Checker
         {
             Intent intent = new Intent(this, typeof(CC_Checker02));
             intent.PutExtra("score", JsonConvert.SerializeObject(score));
-            score = JsonConvert.DeserializeObject<score>(Intent.GetStringExtra("score"));
+            JsonConvert.DeserializeObject<int>(Intent.GetStringExtra("score"));
             
             StartActivity(intent);
         }

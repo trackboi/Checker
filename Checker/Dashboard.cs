@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Java.Interop;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,12 @@ namespace Checker
             SetContentView(Resource.Layout.Dashboard);
 
             // Create your application here
+        }
+
+        [Export("coronaStats")]
+        public void coronaStats(View v)
+        {
+            StartActivity(typeof(coronaStats));
         }
     }
 }

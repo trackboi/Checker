@@ -28,7 +28,7 @@ namespace Checker
 
          public void btn_weiter(View v)
          {
-
+            /*
              TextView Spitzname = FindViewById<TextView>(Resource.Id.editText1);
              string m_Spitzname = Spitzname.Text;
 
@@ -60,7 +60,7 @@ namespace Checker
                 Console.WriteLine("Fehlermeldung"+e);
 
              }
-       
+       */
             StartActivity(typeof(Dashboard));
 
          }

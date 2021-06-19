@@ -63,9 +63,10 @@
             android:text="Corona Statistik"
             android:layout_width="330dp"
             android:layout_height="80dp"
-            android:id="@+id/button5"
+            android:id="@+id/corona_stats"
             android:backgroundTint="#FF018786"
-            android:layout_gravity="center" />
+            android:layout_gravity="center" 
+            android:onClick="coronaStats"/>
         <TextView
             android:text="Text"
             android:layout_width="match_parent"
