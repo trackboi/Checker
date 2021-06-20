@@ -750,3 +750,6 @@ D:\VS_Projekte\repos\Corona_Checker\Checker\obj\Debug\110\android\src\crc6461da7
 D:\VS_Projekte\repos\Corona_Checker\Checker\obj\Debug\110\android\src\crc64764aafc39fc698ee\coronaStats.java
 D:\VS_Projekte\repos\Corona_Checker\Checker\obj\Debug\110\android\assets\Microsoft.CSharp.dll
 D:\VS_Projekte\repos\Corona_Checker\Checker\obj\Debug\110\android\assets\Microsoft.CSharp.pdb
+D:\VS_Projekte\repos\Corona_Checker\Checker\obj\Debug\110\res\drawable\green_dot.png
+D:\VS_Projekte\repos\Corona_Checker\Checker\obj\Debug\110\res\drawable\red_dot.png
+D:\VS_Projekte\repos\Corona_Checker\Checker\obj\Debug\110\res\drawable\yellow_dot.png

@@ -22,6 +22,8 @@
             android:id="@+id/ampel_view"
             android:foregroundGravity="center"
             android:layout_gravity="center" />
+        
     </LinearLayout>
+    
 
 </LinearLayout>

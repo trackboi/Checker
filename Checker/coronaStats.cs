@@ -48,14 +48,35 @@ namespace Checker
                 // Read the content.
                 string responseFromServer = reader.ReadToEnd();
                 // Display the content.
+
+                int pos = responseFromServer.IndexOf("weekIncidence", 0, responseFromServer.Length - 1) + 15;
+
+                string inz_str = "";
+
+                for (int i = 0; i<5; i++)
+                {
+                    inz_str = inz_str + responseFromServer[pos + i];
+                }
+
+                float inz_flo = float.Parse(inz_str);
+
+
+                var imageView = FindViewById<ImageView>(Resource.Id.ampel_view);
                 
 
-                Dictionary<string, Dictionary<string, Dictionary<string, string>>> res = 
-                    JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, Dictionary<string, string>>>>(responseFromServer);
+                if (inz_flo < 35)
+                {
+                    imageView.SetImageResource(Resource.Drawable.green_dot);
+                }
+                else if (35 <= inz_flo  || inz_flo < 100)
+                {
+                    imageView.SetImageResource(Resource.Drawable.yellow_dot);
+                }
+                else
+                {
+                    imageView.SetImageResource(Resource.Drawable.red_dot);
+                }
 
-                Console.WriteLine(responseFromServer);
-
-                string inzidenz = res["data"]["081118"]["weekIncidence"];
             }
 
             // Create your application here
