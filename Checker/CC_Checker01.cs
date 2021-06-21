@@ -18,24 +18,39 @@ namespace Checker
     [Activity(Label = "CC_Checker01")]
     public class CC_Checker01 : Activity
     {
-        private int score;
+        private int score = 0;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.CC_Checker01);
-            
-            int sc = JsonConvert.DeserializeObject<int>(Intent.GetStringExtra("score"));
+           
+
+
 
             // Create your application here
         }
-        [Export("btn_weiter")]
 
-        public void btn_weiter(View v)
+       
+        [Export("btn_ja")]
+
+        public void btn_ja(View v)
         {
+            score += 1; 
             Intent intent = new Intent(this, typeof(CC_Checker02));
             intent.PutExtra("score", JsonConvert.SerializeObject(score));
-            JsonConvert.DeserializeObject<int>(Intent.GetStringExtra("score"));
+          
             
+            StartActivity(intent);
+        }
+        [Export("btn_nein")]
+
+        public void btn_nein(View v)
+        {
+
+            Intent intent = new Intent(this, typeof(CC_Checker02));
+            intent.PutExtra("score", JsonConvert.SerializeObject(score));
+            
+
             StartActivity(intent);
         }
     }

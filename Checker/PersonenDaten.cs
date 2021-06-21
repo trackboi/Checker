@@ -28,7 +28,7 @@ namespace Checker
 
          public void btn_weiter(View v)
          {
-            /*
+            
              TextView Spitzname = FindViewById<TextView>(Resource.Id.editText1);
              string m_Spitzname = Spitzname.Text;
 
@@ -45,8 +45,6 @@ namespace Checker
             string m_Datum = Datum.Text;
 
 
-
-
             string webseite = "http://10.0.2.2:4000/TakeCare?Spitzname=" + m_Spitzname + "&Geschlecht=" + m_Geschlecht + "&Alter=" + m_Alter + "&Gewicht=" + m_Gewicht + "&Datum=" + m_Datum;
 
              WebRequest request = WebRequest.Create(webseite);
@@ -60,7 +58,8 @@ namespace Checker
                 Console.WriteLine("Fehlermeldung"+e);
 
              }
-       */
+            
+       
             StartActivity(typeof(Dashboard));
 
          }

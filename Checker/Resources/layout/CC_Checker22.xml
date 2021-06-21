@@ -72,9 +72,10 @@
             android:text="Weiter"
             android:layout_width="200dp"
             android:layout_height="110dp"
-            android:id="@+id/button1"
+            android:id="@+id/btn_weiter"
             android:backgroundTint="#FF018786"
-            android:layout_gravity="center" />
+            android:layout_gravity="center" 
+            android:onClick="btn_weiter"/>
 
        
  

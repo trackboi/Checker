@@ -15,7 +15,7 @@
         <TextView
             android:text="Text"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="40dp"
             android:id="@+id/textView2"
             android:visibility="invisible" />
         <TextView
@@ -30,21 +30,22 @@
          <TextView
             android:text="Text"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="30dp"
             android:id="@+id/textView3"
             android:visibility="invisible" />
         <TextView
-            android:text="Hiermit bestätige ich, dass ich mit der anonymsierten Speicherung meiner Daten einverstanden bin. Ich habe die Datenschutzerklärung gründlich durchgelesen und habe bewusst das Häcken gesetzt. 
-Wenn Sie mit der Datenschutzerklärung nicht einverstanden sind, können Sie leider die Anwendung nicht benutzten."
+            android:text="Hiermit bestätige ich, dass ich mit der anonymisierten Speicherung meiner Daten einverstanden bin. Ich habe die Datenschutzerklärung gründlich durchgelesen und habe bewusst das Häkchen gesetzt. 
+Wenn Sie mit der Datenschutzerklärung nicht einverstanden sind, können Sie leider die Anwendung nicht verwenden.
+"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:id="@+id/textView4"
             android:textColor="@android:color/black" />
         <TextView
             android:text="Text"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="60dp"
             android:id="@+id/textView8"
             android:visibility="invisible" />
         <CheckBox
@@ -52,17 +53,18 @@ Wenn Sie mit der Datenschutzerklärung nicht einverstanden sind, können Sie lei
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/checkBox1"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            />
           <TextView
             android:text="Text"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="70dp"
             android:id="@+id/textView5"
             android:visibility="invisible" />
               <Button
             android:text="Weiter"
-            android:layout_width="200dp"
-            android:layout_height="110dp"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
             android:id="@id/btn_weiter"
             android:backgroundTint="#FF018786"
             android:layout_gravity="center" 

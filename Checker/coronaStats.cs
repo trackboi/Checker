@@ -4,7 +4,6 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,7 +25,7 @@ namespace Checker
 
             ImageView ampel = FindViewById<ImageView>(Resource.Id.ampel_view);
 
-            string webseite = "https://api.corona-zahlen.org/districts/08118";
+            string webseite = "https://api.corona-zahlen.org/districts/08136";
 
             WebRequest request = WebRequest.Create(webseite);
             request.Method = "GET";
@@ -40,29 +39,35 @@ namespace Checker
                 Console.WriteLine("Fehlermeldung" + e);
 
             }
-
+            // holt sich den dataStream von response
             using (Stream dataStream = response.GetResponseStream())
             {
-                // Open the stream using a StreamReader for easy access.
+               //Initialsiert StreamReader
                 StreamReader reader = new StreamReader(dataStream);
-                // Read the content.
+                // Liest den Stream und schreibt Daten in den String
                 string responseFromServer = reader.ReadToEnd();
-                // Display the content.
-
+               
+                //Ungleichen Json Format deshalb wird der string nach Inzidenz durchsucht
                 int pos = responseFromServer.IndexOf("weekIncidence", 0, responseFromServer.Length - 1) + 15;
-
+               
+               //wird leer initialisiert 
                 string inz_str = "";
 
+               //5 nachfolgende zeichen werden ausgelsen 
                 for (int i = 0; i<5; i++)
                 {
                     inz_str = inz_str + responseFromServer[pos + i];
                 }
-
+                //umwandeln von string in ein float 
                 float inz_flo = float.Parse(inz_str);
 
 
                 var imageView = FindViewById<ImageView>(Resource.Id.ampel_view);
-                
+
+                TextView Ausgabe = FindViewById<TextView>(Resource.Id.textView6);
+
+                Ausgabe.Text = inz_str;
+
 
                 if (inz_flo < 35)
                 {
@@ -79,7 +84,7 @@ namespace Checker
 
             }
 
-            // Create your application here
+            
         }
     }
 }

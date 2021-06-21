@@ -1731,27 +1731,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leo\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\micro\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VS_Projekte\\repos\\Corona_Checker\\Checker\\Checker.csproj",
+      "projectUniqueName": "C:\\Users\\micro\\source\\repos\\Checker\\Checker\\Checker.csproj",
       "projectName": "Checker",
-      "projectPath": "D:\\VS_Projekte\\repos\\Corona_Checker\\Checker\\Checker.csproj",
-      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-      "outputPath": "D:\\VS_Projekte\\repos\\Corona_Checker\\Checker\\obj\\",
+      "projectPath": "C:\\Users\\micro\\source\\repos\\Checker\\Checker\\Checker.csproj",
+      "packagesPath": "C:\\Users\\micro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\micro\\source\\repos\\Checker\\Checker\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\micro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

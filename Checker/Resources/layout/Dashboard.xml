@@ -36,10 +36,11 @@
         <Button
             android:text="Corona Checker"
             android:layout_width="330dp"
-            android:layout_height="80dp"
-            android:id="@+id/button1"
+            android:layout_height="95dp"
+            android:id="@+id/btn_Checker"
             android:backgroundTint="#FF018786"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="btn_Checker"/>
         <TextView
             android:text="Text"
             android:layout_width="match_parent"
@@ -49,7 +50,7 @@
         <Button
             android:text="Corona Umfrage"
             android:layout_width="330dp"
-            android:layout_height="80dp"
+             android:layout_height="95dp"
             android:id="@+id/button2"
             android:backgroundTint="#FF018786"
             android:layout_gravity="center" />
@@ -62,7 +63,7 @@
         <Button
             android:text="Corona Statistik"
             android:layout_width="330dp"
-            android:layout_height="80dp"
+           android:layout_height="95dp"
             android:id="@+id/corona_stats"
             android:backgroundTint="#FF018786"
             android:layout_gravity="center" 
@@ -76,10 +77,11 @@
         <Button
             android:text="Notruf"
             android:layout_width="330dp"
-            android:layout_height="80dp"
-            android:id="@+id/button7"
+            android:layout_height="95dp"
+            android:id="@+id/btn_Notruf"
             android:backgroundTint="#FF018786"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="btn_Notruf"/>
 
      
 

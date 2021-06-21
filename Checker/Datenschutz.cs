@@ -19,16 +19,28 @@ namespace Checker
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Datenschutz);
+            CheckBox checkbox = FindViewById<CheckBox>(Resource.Id.checkBox1);
+
+
+
 
             // Create your application here
         }
-
-        [Export("btn_weiter")]
+        [Export("btn_weiter")]   
 
         public void btn_weiter(View v)
         {
-            var intent = new Intent(this, typeof(PersonenDaten));
-            StartActivity(intent);
+            CheckBox checkbox = FindViewById<CheckBox>(Resource.Id.checkBox1);
+            if (checkbox.Checked)
+            {
+                var intent = new Intent(this, typeof(PersonenDaten));
+                StartActivity(intent);
+            }
+            else
+            {
+               
+            }
         }
+
     }
 }

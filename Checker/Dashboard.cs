@@ -22,11 +22,22 @@ namespace Checker
 
             // Create your application here
         }
+        [Export("btn_Checker")]
+        public void btn_Checker(View v)
+        {
+            StartActivity(typeof(CC_Checker00));
+        }
 
         [Export("coronaStats")]
         public void coronaStats(View v)
         {
             StartActivity(typeof(coronaStats));
+        }
+
+        [Export("btn_Notruf")]
+        public void btn_Notruf(View v)
+        {
+            StartActivity(typeof(Notruf));
         }
     }
 }

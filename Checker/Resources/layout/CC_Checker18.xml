@@ -37,7 +37,7 @@
             android:id="@+id/textView3"
             android:visibility="invisible"/>
         <TextView
-            android:text="Haben Sie ein Verlust Ihres Geschmackssinns?"
+            android:text="Haben Sie einen Verlust Ihres Geschmackssinns?"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:id="@+id/textView4"
@@ -71,7 +71,8 @@
                 android:text="ja"
                 android:layout_width="120dp"
                 android:layout_height="100dp"
-                android:id="@+id/button1"
+                android:id="@+id/btn_ja"
+                android:onClick="btn_ja"
                 android:backgroundTint="#FF018786"
                 />
  
@@ -84,11 +85,12 @@
                 android:text="nein"
                 android:layout_width="120dp"
                 android:layout_height="100dp"
-                android:id="@+id/button2"
+          android:id="@+id/btn_nein"
                 android:foregroundGravity="center"
                 android:gravity="center"
                 android:layout_gravity="right"
-                android:backgroundTint="#FF018786"/>
+                android:backgroundTint="#FF018786"
+                  android:onClick="btn_nein"/>
  
  
  

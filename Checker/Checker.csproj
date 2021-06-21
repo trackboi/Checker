@@ -90,6 +90,7 @@
     <Compile Include="Dashboard.cs" />
     <Compile Include="Datenschutz.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Notruf.cs" />
     <Compile Include="PersonenDaten.cs" />
     <Compile Include="coronaStats.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -231,6 +232,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\yellow_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Hotline.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Download.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

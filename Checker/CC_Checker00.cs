@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Java.Interop;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,24 @@ namespace Checker
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.CC_Checker00);
 
+
+
             // Create your application here
+        }
+        [Export("btn_weiter")]
+
+        public void btn_weiter(View v)
+        {
+            CheckBox checkbox = FindViewById<CheckBox>(Resource.Id.checkBox1);
+            if (checkbox.Checked)
+            {
+                var intent = new Intent(this, typeof(CC_Checker01));
+                StartActivity(intent);
+            }
+            else
+            {
+
+            }
         }
     }
 }

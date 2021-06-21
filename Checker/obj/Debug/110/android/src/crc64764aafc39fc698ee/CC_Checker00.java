@@ -11,6 +11,7 @@ public class CC_Checker00
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
+			"n_btn_weiter:(Landroid/view/View;)V:__export__\n" +
 			"";
 		mono.android.Runtime.register ("Checker.CC_Checker00, Checker", CC_Checker00.class, __md_methods);
 	}
@@ -30,6 +31,14 @@ public class CC_Checker00
 	}
 
 	private native void n_onCreate (android.os.Bundle p0);
+
+
+	public void btn_weiter (android.view.View p0)
+	{
+		n_btn_weiter (p0);
+	}
+
+	private native void n_btn_weiter (android.view.View p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
